@@ -7,19 +7,19 @@
     <title>Homepage</title>
   </head>
   <body>
-    <header>
+    <header role="banner">
       <a href="index.html"
-        ><img src="/images/sysk-logo.webp" alt="SYSK Podcast logo"
+        ><img src="images/sysk-logo.webp" alt="SYSK Podcast logo"
       /></a>
-      <nav>
+      <nav role="navigation">
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="episodes/episodes.html">Episodes</a></li>
+          <li><a href="about.html" aria-label="link to about the podcast page">About</a></li>
+          <li><a href="episodes/episodes.html" aria-label="link to episodes page">Episodes</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main role="main">
       <h1>Stuff You Should Know Podcast</h1>
       <section>
         <h2>About the Podcast</h2>
@@ -54,45 +54,68 @@
         <article>
           <h3>Interesting Origins of Everday Phrases</h3>
 
-          <!-- Display image relevant to topic -->
+          <img
+            src="images/everyday-phrases.jpeg"
+            alt="episode cover reading Interesting Origins of Everyday Phrases"
+          />
 
-          We don’t think about the words and phrases we use all the time - until
-          Josh and Chuck look into them and tell everyone what they found.
-          That’s the gist of this episode!
+          <p>
+            We don’t think about the words and phrases we use all the time -
+            until Josh and Chuck look into them and tell everyone what they
+            found. That’s the gist of this episode!
+          </p>
 
-          <!-- Link to existing html page within episodes directory; relevant to topic -->
-          Learn more
+          <a
+            href="episodes/everyday-phrases.html"
+            aria-label="link to page about this episode"
+            >Learn more</a
+          >
         </article>
 
         <article>
           <h3>The History of Fake Towns</h3>
+          <img
+            src="images/fake-towns.jpeg"
+            alt="episode cover reading The History of Fake Towns"
+          />
 
-          <!-- Display image relevant to topic -->
+          <p>
+            There have been a lot of fake towns built throughout history for a
+            lot of different reasons, like this idyllic suburb Boeing built in
+            the 40s to hide production of their B-17 Bombers! Learn all about
+            these bogus burbs.
+          </p>
 
-          There have been a lot of fake towns built throughout history for a lot
-          of different reasons, like this idyllic suburb Boeing built in the 40s
-          to hide production of their B-17 Bombers! Learn all about these bogus
-          burbs.
-
-          <!-- Link to existing html page within episodes directory; relevant to topic -->
-          Learn more
+          <a
+            href="episodes/fake-towns.html"
+            aria-label="link to page about this episode"
+            >Learn more</a
+          >
         </article>
 
         <article>
           <h3>Doppelgängers: Hey you, you're me!</h3>
 
-          <!-- Display image relevant to topic -->
+          <img
+            src="images/doppelgangers.jpeg"
+            alt="episode cover reading Doppelgängers: Hey you, you're me!"
+          />
 
-          Seeing your near twin is probably pretty weird. But could there be a
-          genetic commonality as well? You bet there could!
+          <p>
+            Seeing your near twin is probably pretty weird. But could there be a
+            genetic commonality as well? You bet there could!
+          </p>
 
-          <!-- Link to existing html page within episodes directory; relevant to topic -->
-          Learn more
+          <a
+            href="episodes/doppelgangers.html"
+            aria-label="link to page about this episode"
+            >Learn more</a
+          >
         </article>
       </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <p><small>&copy; SYSK 2023</small></p>
     </footer>
   </body>
